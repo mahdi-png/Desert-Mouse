@@ -1,0 +1,9 @@
+version: "2"
+authtoken: ---
+tunnels:
+  website:
+    addr: xxxx 
+    proto: http
+  websocket:
+    addr: x.x.x.x:81
+    proto: http
