@@ -16,27 +16,27 @@ This project allows you to control an ESP32 circuit through WebSocket commands s
 
 ### 1. **Running the ESP32 Code**:
 
-   - Open `Main/main.cpp` in your Arduino IDE.
-   - Make sure to update the Wi-Fi credentials:
-     ```cpp
+  - Open `Main/main.cpp` in your Arduino IDE.
+  - Make sure to update the Wi-Fi credentials:
+    ```cpp
 
-     const char* ssid = "Your_SSID";
+    const char* ssid = "Your_SSID";
 
-     const char* password = "Your_PASSWORD";
+    const char* password = "Your_PASSWORD";
 
-     ```
-   - Upload the code to your ESP32 board using the Arduino IDE.
-	   - ### you need the following Setup first:
-		   To run the given code on your ESP32, you will need the following libraries and drivers:
-		   ### Required Libraries
-			1. **Wi-Fi**:
-			    - **Library**: `<WiFi.h>` 
-			    - **Publisher**: Espressif Systems
-			    - Installed with the ESP32 core package.
-			2. **WebSocketsServer** 
-			    - **Library**: `<WebSocketsServer.h>`
-			    - **Publisher**: Markus Sattler
-			    - Install via the Arduino Library Manager or manually from the [Arduino WebSockets GitHub repository](https://github.com/Links2004/arduinoWebSockets).
+    ```
+ - Upload the code to your ESP32 board using the Arduino IDE.
+     - ### you need the following Setup first:
+         To run the given code on your ESP32, you will need the following libraries and drivers:
+	    ### Required Libraries
+	        1. **Wi-Fi**:
+		     - **Library**: `<WiFi.h>` 
+		     - **Publisher**: Espressif Systems
+		     - Installed with the ESP32 core package.
+		2. **WebSocketsServer** 
+	             - **Library**: `<WebSocketsServer.h>`
+		     - **Publisher**: Markus Sattler
+		     - Install via the Arduino Library Manager or manually from the [Arduino WebSockets GitHub repository](https://github.com/Links2004/arduinoWebSockets).
 			
 			1. **ESP32 Core for Arduino**
 			    - Installation: Use the Board Manager in the Arduino IDE and add `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json` to the "Additional Boards Manager URLs."
@@ -67,10 +67,10 @@ This project allows you to control an ESP32 circuit through WebSocket commands s
 1. Open windows PowerShell in the `/website/` folder. 
 2. Type in this command `npx http-server` and hit Enter to run the website on a localhost (your computer).
 3. you will then have something like this:
-	`Available on: 
-	`http://x.x.x.x:8080`
-	`http://x.x.x.x:8080`
-	`Hit CTRL-C to stop the server`
+    `Available on:` 
+    `http://x.x.x.x:8080`
+    `http://x.x.x.x:8080`
+    `Hit CTRL-C to stop the server`
 4. Depending on your website port you need to modify your website address in the `ngrok.yml` file. (in this case its `8080`).
 - **Ensure that the ESP32 and the computer running the browser are on the same network.**
 
